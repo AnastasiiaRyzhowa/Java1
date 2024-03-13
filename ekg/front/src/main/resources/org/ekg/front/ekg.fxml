@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="658.0" prefWidth="908.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ekg.front.controllers.EKG">
+   <children>
+      <Label fx:id="patientLabel" layoutX="20.0" layoutY="14.0" text="Label">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="patientDate" layoutX="20.0" layoutY="48.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="14.0" text="Дата исследования">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="surveyDate" layoutX="300.0" layoutY="48.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <LineChart fx:id="chart1" layoutX="20.0" layoutY="110.0" prefHeight="165.0" prefWidth="872.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis lowerBound="-1.0" side="LEFT" tickLabelGap="0.01" upperBound="1.0" />
+        </yAxis>
+      </LineChart>
+      <LineChart fx:id="chart2" layoutX="20.0" layoutY="291.0" prefHeight="165.0" prefWidth="872.0">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis lowerBound="-1.0" side="LEFT" upperBound="1.0" />
+         </yAxis>
+      </LineChart>
+      <LineChart fx:id="chart3" layoutX="20.0" layoutY="456.0" prefHeight="165.0" prefWidth="872.0">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis lowerBound="-1.0" side="LEFT" upperBound="1.0" />
+         </yAxis>
+      </LineChart>
+   </children>
+</AnchorPane>
